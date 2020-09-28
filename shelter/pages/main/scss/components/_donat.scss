@@ -1,0 +1,64 @@
+.donat {
+  background: #F6F6F6;
+  padding: 82px 0 100px 0;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-info {
+    max-width: 380px;
+  }
+
+  &-image {
+    padding-right: 30px;
+  }
+
+  &-card {
+    margin-top: 20px;
+
+    &__title {
+      font-family: Georgia;
+      font-size: 15px;
+      line-height: 110%;
+      letter-spacing: 0.06em;
+      color: #545454;
+    }
+
+    &__number {
+      display: inline-block;
+      margin-top: 20px;
+      font-family: Georgia;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+      color: #545454;
+      padding: 10px 15px 10px 60px;
+      background: #F1CDB3;
+      border-radius: 9px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 30px;
+        height: 23px;
+        background: url('../../assets/icons/icon-card.svg') no-repeat;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    &__description {
+      font-family: Arial;
+      font-style: italic;
+      font-size: 12px;
+      line-height: 18px;
+      color: #B2B2B2;
+      margin-top: 20px;
+    }
+  }
+}

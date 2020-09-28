@@ -361,12 +361,77 @@ p {
 .help-name {
   font-family: Georgia;
   font-size: 20px;
-  line-height: 85%;
+  line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 .help h3 {
   text-align: center;
+}
+
+.donat {
+  background: #F6F6F6;
+  padding: 82px 0 100px 0;
+}
+
+.donat-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donat-info {
+  max-width: 380px;
+}
+
+.donat-image {
+  padding-right: 30px;
+}
+
+.donat-card {
+  margin-top: 20px;
+}
+
+.donat-card__title {
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.donat-card__number {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding: 10px 15px 10px 60px;
+  background: #F1CDB3;
+  border-radius: 9px;
+  position: relative;
+}
+
+.donat-card__number::before {
+  content: '';
+  width: 30px;
+  height: 23px;
+  background: url("../../assets/icons/icon-card.svg") no-repeat;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.donat-card__description {
+  font-family: Arial;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+  margin-top: 20px;
 }
