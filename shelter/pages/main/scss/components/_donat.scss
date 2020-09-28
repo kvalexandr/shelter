@@ -41,6 +41,10 @@
       border-radius: 9px;
       position: relative;
 
+      &:hover {
+        background: #FDDCC4;
+      }
+
       &::before {
         content: '';
         width: 30px;

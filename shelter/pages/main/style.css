@@ -417,6 +417,10 @@ p {
   position: relative;
 }
 
+.donat-card__number:hover {
+  background: #FDDCC4;
+}
+
 .donat-card__number::before {
   content: '';
   width: 30px;
