@@ -373,7 +373,7 @@ p {
 
 .donat {
   background: #F6F6F6;
-  padding: 82px 0 100px 0;
+  padding: 80px 0 100px 0;
 }
 
 .donat-wrapper {
@@ -384,6 +384,7 @@ p {
 
 .donat-info {
   max-width: 380px;
+  padding: 2px 0 1px 0;
 }
 
 .donat-image {
@@ -434,4 +435,106 @@ p {
   line-height: 18px;
   color: #B2B2B2;
   margin-top: 20px;
+}
+
+.footer {
+  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  padding-top: 62px;
+  flex: 0 0 280px;
+}
+
+.footer-contact {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  display: inline-block;
+  padding-left: 60px;
+  position: relative;
+}
+
+.footer-contact:hover {
+  opacity: .7;
+}
+
+.footer-contact::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.footer-email {
+  margin-top: 45px;
+}
+
+.footer-email::before {
+  width: 40px;
+  height: 36px;
+  background: url("../../assets/icons/icon-email.svg") no-repeat;
+}
+
+.footer-phone {
+  margin-top: 47px;
+}
+
+.footer-phone::before {
+  width: 40px;
+  height: 32px;
+  background: url("../../assets/icons/icon-phone.svg") no-repeat;
+}
+
+.footer-address {
+  padding-top: 62px;
+  flex: 0 0 302px;
+}
+
+.footer-address-item {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  display: inline-block;
+  margin-top: 32px;
+  padding-left: 42px;
+  position: relative;
+}
+
+.footer-address-item:hover {
+  opacity: .7;
+}
+
+.footer-address-item:last-child {
+  margin-top: 38px;
+}
+
+.footer-address-item::before {
+  content: '';
+  width: 22px;
+  height: 32px;
+  background: url("../../assets/icons/icon-marker.svg") no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.footer-image {
+  padding-top: 40px;
+  flex: 0 0 auto;
+}
+
+.footer h3 {
+  color: #FFFFFF;
 }
