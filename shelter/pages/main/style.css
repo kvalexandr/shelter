@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/GeorgiaRegular/GeorgiaRegular.eot");
+  src: url("../../assets/fonts/GeorgiaRegular/GeorgiaRegular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/GeorgiaRegular/GeorgiaRegular.woff") format("woff"), url("../../assets/fonts/GeorgiaRegular/GeorgiaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/ArialRegular/ArialRegular.eot");
+  src: url("../../assets/fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ArialRegular/ArialRegular.woff") format("woff"), url("../../assets/fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -252,9 +268,6 @@ p {
 .friends {
   background-color: #F6F6F6;
   padding: 80px 0 100px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .friends h3 {
@@ -267,7 +280,7 @@ p {
 
 .slider {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -276,8 +289,8 @@ p {
 }
 
 .slider-btn {
-  width: 52px;
-  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
   background: none;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
@@ -313,6 +326,8 @@ p {
 
 .slider-list {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .slider-item {
@@ -320,11 +335,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 35px;
+  padding: 0 0 30px 0;
   width: 270px;
   background: #FAFAFA;
   border-radius: 9px;
-  margin: 0 45px;
   cursor: pointer;
 }
 
@@ -411,7 +425,7 @@ p {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
-  padding: 10px 15px 10px 60px;
+  padding: 10px 14px 10px 60px;
   background: #F1CDB3;
   border-radius: 9px;
   position: relative;
@@ -451,7 +465,7 @@ p {
 }
 
 .footer-contacts {
-  padding-top: 62px;
+  padding-top: 57px;
   flex: 0 0 280px;
 }
 
@@ -499,7 +513,7 @@ p {
 }
 
 .footer-address {
-  padding-top: 62px;
+  padding-top: 57px;
   flex: 0 0 302px;
 }
 
@@ -510,8 +524,8 @@ p {
   letter-spacing: 0.06em;
   color: #F1CDB3;
   display: inline-block;
-  margin-top: 32px;
-  padding-left: 42px;
+  margin-top: 33px;
+  padding-left: 41px;
   position: relative;
 }
 
@@ -520,7 +534,7 @@ p {
 }
 
 .footer-address-item:last-child {
-  margin-top: 38px;
+  margin-top: 37px;
 }
 
 .footer-address-item::before {
@@ -529,8 +543,8 @@ p {
   height: 32px;
   background: url("../../assets/icons/icon-marker.svg") no-repeat;
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: -1px;
+  top: 48%;
   transform: translate(0, -50%);
 }
 

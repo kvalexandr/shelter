@@ -7,7 +7,7 @@
   }
 
   &-contacts {
-    padding-top: 62px;
+    padding-top: 57px;
     flex: 0 0 280px;
   }
 
@@ -55,7 +55,7 @@
   }
 
   &-address {
-    padding-top: 62px;
+    padding-top: 57px;
     flex: 0 0 302px;
   }
 
@@ -66,8 +66,8 @@
     letter-spacing: 0.06em;
     color: #F1CDB3;
     display: inline-block;
-    margin-top: 32px;
-    padding-left: 42px;
+    margin-top: 33px;
+    padding-left: 41px;
     position: relative;
 
     &:hover {
@@ -75,7 +75,7 @@
     }
 
     &:last-child {
-      margin-top: 38px;
+      margin-top: 37px;
     }
 
     &::before {
@@ -84,8 +84,8 @@
       height: 32px;
       background: url('../../assets/icons/icon-marker.svg') no-repeat;
       position: absolute;
-      left: 0;
-      top: 50%;
+      left: -1px;
+      top: 48%;
       transform: translate(0, -50%);
     }
   }
