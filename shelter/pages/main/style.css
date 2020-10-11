@@ -98,6 +98,12 @@ h6 {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
 h2 {
   font-family: Georgia;
   font-size: 44px;
@@ -158,6 +164,12 @@ p {
   padding-top: 60px;
 }
 
+@media screen and (max-width: 1023px) {
+  .header-wrapper {
+    padding-top: 30px;
+  }
+}
+
 .header .logo__title {
   font-family: Georgia;
   font-size: 32px;
@@ -210,11 +222,24 @@ p {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 1023px) {
+  .notonly {
+    padding-top: 232px;
+  }
+}
+
 .notonly-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .notonly-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .notonly-left {
@@ -227,8 +252,21 @@ p {
   padding-left: 42px;
 }
 
+@media screen and (max-width: 1023px) {
+  .notonly-right {
+    margin-top: 100px;
+    padding-left: 139px;
+  }
+}
+
 .notonly-right img {
   width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .notonly__btn {
+    text-align: center;
+  }
 }
 
 .notonly__title {
@@ -257,12 +295,25 @@ p {
   justify-content: center;
 }
 
+@media screen and (max-width: 1023px) {
+  .about-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
 .about-info {
   max-width: 430px;
 }
 
 .about-image {
   padding-right: 120px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-image {
+    padding-right: 0;
+    padding-top: 80px;
+  }
 }
 
 .friends {
@@ -315,8 +366,20 @@ p {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 1023px) {
+  .slider-btn-prev {
+    margin-right: -8px;
+  }
+}
+
 .slider-btn-next {
   margin-left: 8px;
+}
+
+@media screen and (max-width: 1023px) {
+  .slider-btn-next {
+    margin-left: -8px;
+  }
 }
 
 .slider-btn-next span {
@@ -340,6 +403,12 @@ p {
   background: #FAFAFA;
   border-radius: 9px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .slider-item:last-child {
+    display: none;
+  }
 }
 
 .slider-item:hover {
@@ -369,7 +438,14 @@ p {
 
 .help-item {
   text-align: center;
-  margin: 55px 60px 0 60px;
+  margin: 55px 60px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .help-item {
+    margin: 55px 30px 0;
+    width: 170px;
+  }
 }
 
 .help-name {
@@ -394,19 +470,34 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .donat-wrapper {
+    flex-direction: column-reverse;
+  }
 }
 
 .donat-info {
   max-width: 380px;
-  padding: 2px 0 1px 0;
 }
 
 .donat-image {
   padding-right: 30px;
 }
 
+@media screen and (max-width: 1023px) {
+  .donat-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    padding-right: 0;
+  }
+}
+
 .donat-card {
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .donat-card__title {
@@ -462,11 +553,25 @@ p {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-wrapper {
+    justify-content: space-around;
+    margin: 0px 3px;
+  }
 }
 
 .footer-contacts {
   padding-top: 57px;
   flex: 0 0 280px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-contacts {
+    padding-top: 30px;
+  }
 }
 
 .footer-contact {
@@ -503,7 +608,7 @@ p {
 }
 
 .footer-phone {
-  margin-top: 47px;
+  margin-top: 48px;
 }
 
 .footer-phone::before {
@@ -515,6 +620,12 @@ p {
 .footer-address {
   padding-top: 57px;
   flex: 0 0 302px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-address {
+    padding-top: 30px;
+  }
 }
 
 .footer-address-item {
@@ -551,6 +662,12 @@ p {
 .footer-image {
   padding-top: 40px;
   flex: 0 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-image {
+    padding-top: 70px;
+  }
 }
 
 .footer h3 {

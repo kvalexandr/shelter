@@ -4,11 +4,21 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and(max-width:  $width-1024) {
+      justify-content: space-around;
+      margin: 0px 3px;
+    }
   }
 
   &-contacts {
     padding-top: 57px;
     flex: 0 0 280px;
+
+    @media screen and(max-width:  $width-1024) {
+      padding-top: 30px;
+    }
   }
 
   &-contact {
@@ -45,7 +55,7 @@
   }
 
   &-phone {
-    margin-top: 47px;
+    margin-top: 48px;
 
     &::before {
       width: 40px;
@@ -57,6 +67,10 @@
   &-address {
     padding-top: 57px;
     flex: 0 0 302px;
+
+    @media screen and(max-width:  $width-1024) {
+      padding-top: 30px;
+    }
   }
 
   &-address-item {
@@ -93,6 +107,10 @@
   &-image {
     padding-top: 40px;
     flex: 0 0 auto;
+
+    @media screen and(max-width:  $width-1024) {
+      padding-top: 70px;
+    }
   }
 
   h3 {

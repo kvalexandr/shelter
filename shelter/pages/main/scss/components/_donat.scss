@@ -6,19 +6,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and(max-width:  $width-1024) {
+      flex-direction: column-reverse;
+    }
   }
 
   &-info {
     max-width: 380px;
-    padding: 2px 0 1px 0;
   }
 
   &-image {
     padding-right: 30px;
+    
+    @media screen and(max-width:  $width-1024) {
+      width: 100%;
+      text-align: center;
+      margin-top: 60px;
+      padding-right: 0;
+    }
   }
 
   &-card {
-    margin-top: 20px;
+    margin-top: 21px;
 
     &__title {
       font-family: Georgia;

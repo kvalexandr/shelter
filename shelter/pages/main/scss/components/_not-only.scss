@@ -4,11 +4,20 @@
   display: flex;
   align-items: flex-end;
 
+  @media screen and(max-width:  $width-1024) {
+    padding-top: 232px;
+  }
+
   &-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @media screen and(max-width:  $width-1024) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   &-left {
@@ -20,8 +29,19 @@
     flex: 1 1 auto;
     padding-left: 42px;
 
+    @media screen and(max-width:  $width-1024) {
+      margin-top: 100px;
+      padding-left: 139px;
+    }
+
     img {
       width: 100%;
+    }
+  }
+
+  &__btn {
+    @media screen and(max-width:  $width-1024) {
+      text-align: center;
     }
   }
 
