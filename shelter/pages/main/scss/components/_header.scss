@@ -35,6 +35,12 @@
     }
   }
 
+  .nav-menu {
+    @media screen and(max-width:  $width-768) {
+      display: none;
+    }
+  }
+
   .menu {
     display: flex;
     margin-bottom: 4px;

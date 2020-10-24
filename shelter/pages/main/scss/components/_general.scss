@@ -84,6 +84,10 @@ h6 {
   @media screen and(max-width:  $width-1024) {
     padding: 0 30px;
   }
+
+  @media screen and(max-width:  $width-768) {
+    padding: 0 10px;
+  }
 }
 
 h2 {
@@ -91,6 +95,11 @@ h2 {
   font-size: 44px;
   line-height: 130%;
   color: #545454;
+
+  @media screen and(max-width:  $width-768) {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
 }
 
 h3 {
@@ -99,6 +108,12 @@ h3 {
   line-height: 45px;
   letter-spacing: 0.06em;
   color: #545454;
+
+  @media screen and(max-width:  $width-768) {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+  }
 }
 
 p {
@@ -108,4 +123,8 @@ p {
   font-size: 15px;
   line-height: 160%;
   color: #4C4C4C;
+
+  @media screen and(max-width:  $width-768) {
+   padding-top: 24px;
+  }
 }

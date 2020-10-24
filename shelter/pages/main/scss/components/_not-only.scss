@@ -23,15 +23,26 @@
   &-left {
     flex: 0 0 460px;
     margin-top: -80px;
+
+    @media screen and(max-width:  $width-768) {
+      text-align: center;
+      flex-shrink: 1;
+      margin-top: -82px;
+    }
   }
 
   &-right {
     flex: 1 1 auto;
-    padding-left: 42px;
+    padding-left: 3.5%;
 
     @media screen and(max-width:  $width-1024) {
       margin-top: 100px;
-      padding-left: 139px;
+      padding-left: 19.7%;
+    }
+
+    @media screen and(max-width:  $width-768) {
+      margin-top: 105px;
+      padding-left: 13%;
     }
 
     img {
@@ -46,9 +57,6 @@
   }
 
   &__title {
-    font-family: Georgia;
-    font-size: 44px;
-    line-height: 130%;
     color: #FFFFFF;
   }
 
@@ -59,5 +67,9 @@
     color: #CDCDCD;
     margin-top: 42px;
     margin-bottom: 40px;
+
+    @media screen and(max-width:  $width-768) {
+      margin-bottom: 42px;
+    }
   }
 }

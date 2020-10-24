@@ -2,6 +2,10 @@
   background: #F6F6F6;
   padding: 80px 0 100px 0;
 
+  @media screen and(max-width:  $width-768) {
+    padding: 42px 0;
+  }
+
   &-wrapper {
     display: flex;
     align-items: center;
@@ -14,7 +18,11 @@
   }
 
   &-info {
-    max-width: 380px;
+    max-width: 378px;
+
+    @media screen and(max-width:  $width-768) {
+      padding: 0 10px;
+    }
   }
 
   &-image {
@@ -26,10 +34,25 @@
       margin-top: 60px;
       padding-right: 0;
     }
+
+    @media screen and(max-width:  $width-768) {
+      padding: 0 20px;
+      margin-top: 43px;
+    }
+
+    img {
+      @media screen and(max-width:  $width-768) {
+        width: 100%;
+      }
+    }
   }
 
   &-card {
     margin-top: 21px;
+
+    @media screen and(max-width:  $width-768) {
+      text-align: center;
+    }
 
     &__title {
       font-family: Georgia;
@@ -37,6 +60,11 @@
       line-height: 110%;
       letter-spacing: 0.06em;
       color: #545454;
+
+      @media screen and(max-width:  $width-768) {
+        line-height: 140%;
+        letter-spacing: 0;
+      }
     }
 
     &__number {
@@ -51,6 +79,13 @@
       background: #F1CDB3;
       border-radius: 9px;
       position: relative;
+
+      @media screen and(max-width:  $width-768) {
+        font-size: 15px;
+        line-height: 110%;
+        padding: 13px 14px 13px 60px;
+        margin-top: 23px;
+      }
 
       &:hover {
         background: #FDDCC4;
@@ -75,6 +110,10 @@
       line-height: 18px;
       color: #B2B2B2;
       margin-top: 20px;
+
+      @media screen and(max-width:  $width-768) {
+        text-align: justify;
+      }
     }
   }
 }

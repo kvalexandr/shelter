@@ -1,6 +1,10 @@
 .about {
   padding: 80px 0 100px 0;
 
+  @media screen and(max-width:  $width-768) {
+    padding: 42px 0;
+  }
+
   &-wrapper {
     display: flex;
     align-items: center;
@@ -13,6 +17,11 @@
 
   &-info {
     max-width: 430px;
+
+    @media screen and(max-width:  $width-768) {
+      margin: 0 15px;
+      text-align: justify;
+    }
   }
 
   &-image {
@@ -21,6 +30,18 @@
     @media screen and(max-width:  $width-1024) {
       padding-right: 0;
       padding-top: 80px;
+    }
+
+    @media screen and(max-width:  $width-768) {
+      padding-top: 42px;
+      padding-bottom: 1px;
+      text-align: center;
+    }
+
+    img {
+      @media screen and(max-width:  $width-768) {
+        width: 86%;
+      }
     }
   }
 }

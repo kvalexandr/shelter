@@ -2,6 +2,10 @@
   background-color: #F6F6F6;
   padding: 80px 0 100px 0;
 
+  @media screen and(max-width:  $width-768) {
+    padding: 42px 0;
+  }
+
   h3 {
     text-align: center;
   }
@@ -15,9 +19,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+  @media screen and(max-width:  $width-768) {
+    display: block;
+  }
   
   &-wrapper {
     margin: 60px 0;
+
+    @media screen and(max-width:  $width-768) {
+      width: 270px;
+      margin: 42px auto 114px;
+    }
   }
 
   &-btn {
@@ -29,6 +43,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and(max-width:  $width-768) {
+      position: absolute;
+      bottom: -72px;
+    }
 
     &:hover {
       background: #FDDCC4;
@@ -49,6 +68,10 @@
     @media screen and(max-width:  $width-1024) {
       margin-right: -8px;
     }
+
+    @media screen and(max-width:  $width-768) {
+      left: 43px;
+    }
   }
 
   &-btn-next {
@@ -56,6 +79,10 @@
 
     @media screen and(max-width:  $width-1024) {
       margin-left: -8px;
+    }
+
+    @media screen and(max-width:  $width-768) {
+      right: 43px;
     }
 
     span {
@@ -83,6 +110,12 @@
 
     &:last-child {
       @media screen and(max-width:  $width-1024) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and(max-width:  $width-768) {
         display: none;
       }
     }
