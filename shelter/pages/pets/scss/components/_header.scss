@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and(max-width:  $width-1024) {
+      padding-top: 30px;
+    }
+  }
+
+  .logo {
+
+    &__title {
+      font-family: Georgia;
+      font-size: 32px;
+      line-height: 36px;
+      color: #545454;
+      letter-spacing: 2px;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__subtitle {
+      font-family: Arial;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 1.3px;
+      color: #292929;
+      padding: 9px 0 0 4px;
+    }
+  }
+
+  .nav-menu {
+    @media screen and(max-width:  $width-768) {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: flex;
+    margin-bottom: 4px;
+
+    &__item {
+      margin-right: 36px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      font-family: Arial;
+      font-size: 15px;
+      line-height: 20px;
+      color: #545454;
+
+      &.active, &:hover {
+        color: #292929;
+        padding-bottom: 4px;
+        border-bottom: 3px solid #F1CDB3;
+      }
+    }
+
+    &__link-not-active {
+      font-family: Arial;
+      font-size: 15px;
+      line-height: 20px;
+      color: #545454;
+    }
+  }
+}
