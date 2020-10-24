@@ -65,5 +65,12 @@
         border-bottom: 3px solid #F1CDB3;
       }
     }
+
+    &__link-not-active {
+      font-family: Arial;
+      font-size: 15px;
+      line-height: 20px;
+      color: #CDCDCD;
+    }
   }
 }
