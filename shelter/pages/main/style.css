@@ -163,6 +163,7 @@ p {
   width: 100%;
   height: 100%;
   opacity: 0;
+  visibility: hidden;
   background-color: #292929;
   transition: opacity 0.25s linear, visibility 0.25s linear;
   position: fixed;
@@ -173,6 +174,7 @@ p {
 
 .overlay.active {
   opacity: 0.6;
+  visibility: visible;
 }
 
 .btn {
