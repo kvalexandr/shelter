@@ -1,3 +1,17 @@
+// json
+
+const pets = [];
+const fullPetsList = [];
+
+const request = new XMLHttpRequest();
+request.open('GET', '../../json/pets.json');
+request.onload = () => {
+  console.log(request.response);
+};
+request.send();
+
+// menu
+
 const overlay = document.querySelector('.overlay');
 const headerWrapper = document.querySelector('.header-wrapper');
 const burgerMenu = document.querySelector('.header__burger-menu');

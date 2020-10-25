@@ -401,11 +401,20 @@ p {
 
 .pets-wrapper {
   margin: 60px 0 30px;
+  height: 930px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1279px) {
+  .pets-wrapper {
+    margin: 60px 15% 30px;
+    height: 1395px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   .pets-wrapper {
-    margin: 30px 0 10px;
+    margin: 30px 5% 10px;
   }
 }
 
@@ -418,14 +427,14 @@ p {
 
 .pets-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: calc(100% + 40px);
 }
 
 @media screen and (max-width: 1023px) {
   .pets-list {
-    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -435,8 +444,9 @@ p {
   align-items: center;
   justify-content: center;
   padding: 0 0 30px 0;
-  margin-bottom: 30px;
-  width: 270px;
+  margin: 0 40px 30px 0;
+  width: calc(25% - 40px);
+  min-width: 270px;
   background: #FAFAFA;
   border-radius: 9px;
   cursor: pointer;
@@ -444,8 +454,13 @@ p {
 
 @media screen and (max-width: 1023px) {
   .pets-item {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 30px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pets-item {
+    margin: 0 0px 30px 0px;
   }
 }
 
