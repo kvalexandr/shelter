@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
@@ -17,6 +18,11 @@
           <h1 class="logo__title">Cozy House</h1>
           <div class="logo__subtitle">Shelter for pets in Boston</div>
         </a>
+        <button class="header__burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <nav class="nav-menu">
           <ul class="menu">
             <li class="menu__item">
@@ -26,10 +32,10 @@
               <a href="../pets/" class="menu__link">Our pets</a>
             </li>
             <li class="menu__item">
-              <a href="javascript:void(0);" class="menu__link-not-active">Help the shelter</a>
+              <span class="menu__link-not-active">Help the shelter</span>
             </li>
             <li class="menu__item">
-              <a href="javascript:void(0);" class="menu__link-not-active">Contacts</a>
+              <span class="menu__link-not-active">Contacts</span>
             </li>
           </ul>
         </nav>
@@ -324,6 +330,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
