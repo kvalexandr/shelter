@@ -136,10 +136,16 @@
         color: #545454;
       }
 
-      &.active, &:hover {
+      &.active {
         color: #292929;
         padding-bottom: 4px;
         border-bottom: 3px solid #F1CDB3;
+      }
+
+      &:hover {
+        color: #666;
+        padding-bottom: 4px;
+        border-bottom: 3px solid #ecb187;
       }
     }
 

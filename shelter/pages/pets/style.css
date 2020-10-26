@@ -177,6 +177,10 @@ p {
   visibility: visible;
 }
 
+.overlay-modal {
+  z-index: 20;
+}
+
 .btn {
   padding: 13px 43px;
   color: #292929;
@@ -548,10 +552,16 @@ p {
   }
 }
 
-.header .menu__link.active, .header .menu__link:hover {
+.header .menu__link.active {
   color: #292929;
   padding-bottom: 4px;
   border-bottom: 3px solid #F1CDB3;
+}
+
+.header .menu__link:hover {
+  color: #666;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #ecb187;
 }
 
 .header .menu__link-not-active {
