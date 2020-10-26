@@ -29,6 +29,7 @@
     margin: 60px 0 30px;
     height: 930px;
     overflow: hidden;
+    position: relative;
 
     @media screen and(max-width:  $width-1280) {
       margin: 60px 15% 30px;
@@ -50,6 +51,9 @@
     justify-content: center;
     flex-wrap: wrap;
     width: calc(100% + 40px);
+    position: absolute;
+    top: 0;
+    left: 0;
 
     @media screen and(max-width:  $width-1024) {
       width: 100%;
@@ -93,6 +97,7 @@
 }
 
 .pagination {
+
   display: flex;
   justify-content: center;
 
@@ -119,6 +124,17 @@
     &:hover {
       background: #FDDCC4;
       border-color: #FDDCC4;
+    }
+  }
+
+  .disable-page {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+    cursor: default;
+
+    &:hover {
+      background: none;
+      border-color: #CDCDCD;
     }
   }
 

@@ -11,6 +11,7 @@
 
 <body>
   <div class="overlay"></div>
+  <div class="overlay-modal"></div>
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
@@ -47,55 +48,14 @@
       <div class="container">
         <h3>Our friends who<br>are looking for a house</h3>
         <div class="pets-wrapper">
-          <div class="pets-list">
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/katrine.png" alt="">
-              <div class="pets-item__title">Katrine</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/jennifer.png" alt="">
-              <div class="pets-item__title">Jennifer</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/woody.png" alt="">
-              <div class="pets-item__title">Woody</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/sophia.png" alt="">
-              <div class="pets-item__title">Woody</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/timmy.png" alt="">
-              <div class="pets-item__title">Katrine</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/charly.png" alt="">
-              <div class="pets-item__title">Jennifer</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/scarlett.png" alt="">
-              <div class="pets-item__title">Woody</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-            <div class="pets-item">
-              <img class="pets-item__img" src="../../assets/images/freddie.png" alt="">
-              <div class="pets-item__title">Dog</div>
-              <button class="btn btn-border pets-item__btn">Learn more</button>
-            </div>
-          </div>
+          <div class="pets-list"></div>
         </div>
         <div class="pagination">
-          <button class="pagination-btn" disabled>&lt;&lt;</button>
-          <button class="pagination-btn" disabled>&lt;</button>
-          <button class="pagination-btn pagination-num">1</button>
-          <button class="pagination-btn">&gt;</button>
-          <button class="pagination-btn">&gt;&gt;</button>
+          <button id="firstPage" class="pagination-btn">&lt;&lt;</button>
+          <button id="prevPage" class="pagination-btn">&lt;</button>
+          <button id="currentPage" class="pagination-btn pagination-num">1</button>
+          <button id="nextPage" class="pagination-btn">&gt;</button>
+          <button id="lastPage" class="pagination-btn">&gt;&gt;</button>
         </div>
       </div>
     </section>
@@ -121,6 +81,29 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__img" id="pet_img"></div>
+    <div class="modal__content">
+      <span class="modal__name" id="pet_name"></span>
+      <span class="modal__type" id="pet_type"></span>
+      <span class="modal__description" id="pet_description"></span>
+
+      <ul class="modal__info">
+        <li><strong>Age:</strong> <span id="pet_age">2 months</span></li>
+        <li>
+          <strong>Inoculations:</strong>
+          <span id="pet_inoculations">none</span>
+        </li>
+        <li><strong>Diseases:</strong> <span id="pet_diseases">none</span></li>
+        <li><strong>Parasites:</strong> <span id="pet_parasites">none</span></li>
+      </ul>
+    </div>
+
+    <button class="modal__close">
+      <img src="../../assets/icons/close.svg" alt="Close icon">
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>
