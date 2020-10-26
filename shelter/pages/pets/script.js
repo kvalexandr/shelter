@@ -257,6 +257,14 @@ const closeModal = () => {
 overlayModal.addEventListener('click', closeModal);
 closeBtnModal.addEventListener('click', closeModal);
 
+overlayModal.addEventListener('mouseover', () => {
+  closeBtnModal.classList.add('active');
+});
+
+overlayModal.addEventListener('mouseout', () => {
+  closeBtnModal.classList.remove('active');
+});
+
 // menu
 
 const overlay = document.querySelector('.overlay');
