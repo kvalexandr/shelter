@@ -1,13 +1,13 @@
 .friends {
   background-color: #F6F6F6;
-  padding: 80px 0 100px 0;
+  padding: 200px 0 100px 0;
 
   @media screen and(max-width:  $width-1024) {
-    padding: 80px 0 76px 0;
+    padding: 200px 0 76px 0;
   }
 
   @media screen and(max-width:  $width-768) {
-    padding: 42px 0;
+    padding: 161px 0;
   }
 
   h3 {

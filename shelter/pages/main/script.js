@@ -220,3 +220,17 @@ window.addEventListener('resize', (e) => {
     disableMenu();
   }
 });
+
+// active link
+
+const activeLink = document.querySelector('.menu__link.active');
+activeLink.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  document.body.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth',
+  });
+
+  disableMenu();
+});

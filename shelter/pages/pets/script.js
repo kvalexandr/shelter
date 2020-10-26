@@ -263,12 +263,14 @@ const overlay = document.querySelector('.overlay');
 const headerWrapper = document.querySelector('.header-wrapper');
 const burgerMenu = document.querySelector('.header__burger-menu');
 const navMenu = document.querySelector('.nav-menu');
+const header = document.querySelector('.header');
 
 const viewMenu = () => {
   headerWrapper.classList.toggle('active');
   burgerMenu.classList.toggle('active');
   navMenu.classList.toggle('active');
   overlay.classList.toggle('active');
+  header.classList.toggle('active');
   document.body.classList.toggle('no-scroll');
 }
 
@@ -277,6 +279,7 @@ const disableMenu = () => {
   burgerMenu.classList.remove('active');
   navMenu.classList.remove('active');
   overlay.classList.remove('active');
+  header.classList.remove('active');
   document.body.classList.remove('no-scroll');
 }
 
@@ -289,3 +292,15 @@ window.addEventListener('resize', (e) => {
   }
 });
 
+// active link
+const activeLink = document.querySelector('.menu__link.active');
+activeLink.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  document.body.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth',
+  });
+
+  disableMenu();
+});
