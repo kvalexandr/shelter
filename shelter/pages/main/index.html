@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Shelter</title>
   <link rel="stylesheet" href="../../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="overlay"></div>
+  <div class="overlay-modal"></div>
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
@@ -92,21 +94,7 @@
           <div class="slider">
             <button class="slider-btn slider-btn-prev"><span></span></button>
             <div class="slider-list">
-              <div class="slider-item">
-                <img class="slider-item__img" src="../../assets/images/katrine.png" alt="">
-                <div class="slider-item__title">Katrine</div>
-                <button class="btn btn-border slider-item__btn">Learn more</button>
-              </div>
-              <div class="slider-item">
-                <img class="slider-item__img" src="../../assets/images/jennifer.png" alt="">
-                <div class="slider-item__title">Jennifer</div>
-                <button class="btn btn-border slider-item__btn">Learn more</button>
-              </div>
-              <div class="slider-item">
-                <img class="slider-item__img" src="../../assets/images/woody.png" alt="">
-                <div class="slider-item__title">Woody</div>
-                <button class="btn btn-border slider-item__btn">Learn more</button>
-              </div>
+
             </div>
             <button class="slider-btn slider-btn-next"><span></span></button>
           </div>
@@ -331,6 +319,31 @@
     </div>
   </footer>
 
+  <div class="modal">
+    <div class="modal__img" id="pet_img"></div>
+    <div class="modal__content">
+      <span class="modal__name" id="pet_name"></span>
+      <span class="modal__type" id="pet_type"></span>
+      <span class="modal__description" id="pet_description"></span>
+
+      <ul class="modal__info">
+        <li><strong>Age:</strong> <span id="pet_age">2 months</span></li>
+        <li>
+          <strong>Inoculations:</strong>
+          <span id="pet_inoculations">none</span>
+        </li>
+        <li><strong>Diseases:</strong> <span id="pet_diseases">none</span></li>
+        <li><strong>Parasites:</strong> <span id="pet_parasites">none</span></li>
+      </ul>
+    </div>
+
+    <button class="modal__close">
+      <img src="../../assets/icons/close.svg" alt="Close icon">
+    </button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="script.js"></script>
 </body>
 
